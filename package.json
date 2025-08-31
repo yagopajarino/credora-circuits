@@ -1,0 +1,19 @@
+{
+  "name": "zkemail-circom",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Yago Pajariño <pajarinoyago@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "generate-proof": "tsc && node dist/generateProofForContract.js"
+  },
+  "dependencies": {
+    "@zk-email/circuits": "^6.3.4",
+    "@zk-email/contracts": "^6.3.2",
+    "@zk-email/helpers": "^6.4.2",
+    "@zk-email/sdk": "^2.0.1",
+    "typescript": "^5.9.2"
+  }
+}
