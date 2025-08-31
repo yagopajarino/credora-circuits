@@ -1,0 +1,5 @@
+dist/
+eml/
+node_modules/
+
+circuit.zkey
