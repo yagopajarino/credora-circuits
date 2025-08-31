@@ -1,8 +1,8 @@
-# ZK Email Proof Generator for Smart Contracts
+# Credora ZK-Email Verification Scripts
 
-This script generates ZK Email proofs from email content and formats them for smart contract verification using your Groth16 verifier.
+This repository contains **Credora's** zero-knowledge email verification scripts and circuits. These tools enable privacy-preserving verification of email communications using zk-SNARKs, allowing users to prove they received specific emails without revealing the email content.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Generate proof from email file:
 ```bash
@@ -14,7 +14,7 @@ npm run generate-proof ./eml/my-email.eml
 yarn generate-proof ./eml/my-email.eml
 ```
 
-## 📋 Output
+## Output
 
 The script will generate:
 
@@ -42,7 +42,7 @@ _pubSignals:
 ["2947746231636927925276790830637267471457698983303944749031642962373791107985","142529241059546559772806697304092831350","199117628540160284500033034902936894931","11362788075416929775276022722411606929241","0"]
 ```
 
-## 🔧 Programmatic Usage
+## Programmatic Usage
 
 ### Import and use in your code:
 
@@ -65,7 +65,7 @@ const isValid = await verifierContract.verifyProof(
 );
 ```
 
-## 📄 Data Structure
+## Data Structure
 
 The generated proof data includes:
 
@@ -85,7 +85,7 @@ interface ContractProofData {
 }
 ```
 
-## 🎯 Smart Contract Integration
+## Smart Contract Integration
 
 ### Using ethers.js:
 ```typescript
@@ -109,11 +109,11 @@ const isValid = await verifierContract.methods.verifyProof(
 ).call();
 ```
 
-## 🔍 What the Proof Verifies
+## What the Proof Verifies
 
 This ZK proof demonstrates that you received an email with the subject "You've been paid!" from a Deel email address, without revealing any other email content or metadata.
 
-## ⚠️ Requirements
+## Requirements
 
 - Node.js and npm/yarn
 - TypeScript
